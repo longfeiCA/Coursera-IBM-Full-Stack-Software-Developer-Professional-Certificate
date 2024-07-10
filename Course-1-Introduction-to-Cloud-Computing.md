@@ -303,6 +303,129 @@ MODULE 3: Components of cloud computing
           Graded Assessment
 ```
 
+### Summary
+```
+Lesson 1 Summary: Cloud Infrastructure
+In this lesson, you have learned:
+
+Cloud infrastructure consists of data centers, storage, networking components, and computing resources.
+
+Virtualization is the process of creating a software-based version of physical resources, made possible by hypervisors. 
+
+A few different types of Virtual Machines can be provisioned on the cloud. These include:
+
+Shared or Public Cloud VMs that are provider-managed, multi-tenant deployments that can be provisioned on-demand with predefined sizes
+
+Transient or Spot VMs that take advantage of unused capacity in a cloud data center
+
+Reserved VMs that allow you to reserve capacity and guarantee resources for future deployments 
+
+Dedicated hosts that offer single-tenant isolation
+
+Bare metal servers are single-tenant physical servers that are dedicated to a single customer. Bare metal servers fulfill the demanding needs of high-performance computing (HPC) and data-intense applications. They are ideal for applications that have a high degree of security or compliance requirements.
+
+Networking capabilities in the cloud are delivered as a service rather than in the form of rack-mounted devices. Cloud resources such as VMs (or VSIs), storage, network connectivity, and load balancers are deployed into subnets within Virtual Private Clouds (VPCs). Using private and public subnets allows users to deploy multi-tier enterprise applications securely. Load balancers distribute the traffic and allow applications to be responsive.
+
+Containers are executable units of software in which application code, its libraries, and its dependences are packaged in a common way, so that it can be run anywhere, from desktops, traditional IT, to the cloud. Containers are more lightweight and consume fewer resources than Virtual Machines, helping streamline the development and deployment of cloud native applications. 
+
+
+Lesson 2 Summary: Cloud Storage and Content Delivery Networks
+In this lesson, you have learned:
+
+Cloud storage is available in four main types–Direct Attached, File, Block, and Object Storage. These storage types differ in how they can be accessed, the capacity they offer, how much they cost, the types of data they are best suited to store, and their read-write speed.
+
+Direct Attached (or Local) Storage is storage that is presented directly to a cloud-based server and is effectively either within the host server chassis or within the same rack.
+
+File Storage is typically presented to compute nodes as a Network File System (NFS), which means that the storage is connected to compute nodes over a standard ethernet network.
+
+Block Storage is presented to compute nodes using high-speed fiber connections, typically provisioned in volumes, which are mounted onto a compute node.  
+
+Object Storage is accessed via an API and doesn’t need an underlying compute node. 
+
+Object Storage offers infinite capacity as you can keep adding files to it and just pay for what you use. Compared to the other storage types, object storage is slowest in terms of read and write speeds. 
+
+A Content Delivery Network (CDN) is a distributed server network that accelerates internet content delivery by delivering temporarily stored or cached copies of website or media content to users based on their geographic location. 
+```
+
+### Module 3 Glossary: Components of Cloud Computing
+|Term|Definition|
+|----|----------|
+|ACL|Access Control Lists|
+|AZ|Availability Zones are distinct Data Centers with their own power, cooling and networking resources. These Zones can have names like DAL-09 or us-east-1.  |
+|Bare-metal hypervisor|Installed directly on top of the physical server. They're more secure, have lower latency, and are usually the ones you see in the market the most|
+|Block storage|Is presented to compute nodes using high-speed fiber connections, which means that read and write speeds are typically much faster and reliable than with file storage|
+|CDNs|Content Delivery Networks is a distributed server network that delivers temporarily stored, or cached, copies of website content to users based on the user’s geographic location|
+|Cloud Region|A geographic area or location where a Cloud provider’s infrastructure is clustered, and may have names like NA South or US East|
+|Containers|Are an executable unit of software in which application code is packaged, along with its libraries and dependencies, in common ways so that it can be run anywhere, whether it be on desktop, traditional IT, or the cloud|
+|Data center|A huge room or a warehouse containing cloud infrastructure|
+|Dedicated hosts|Offer single-tenant isolation|
+|Direct Attached storage|Or Local storage is storage which is presented directly to a cloud-based server and is effectively either within the host server chassis or within the same rack|
+|File storage|Is typically presented to compute nodes as ‘NFS Storage’. NFS stands for Network File System and means that the storage is connected to compute nodes over a standard ethernet network|
+|Hosted hypervisor|There's a layer of host OS between the physical server and the hypervisor. These hypervisors are less frequently used and mostly used for “end-user” virtualization|
+|HPC|High-performance computing|
+|Hypervisor|A piece of software that runs above the physical server or host|
+|IOPS|Input/Output Operations Per Second and refers to the speed at which the disks can write and read data|
+|NFS|Network File Storage|
+|Object storage|Storage not attached to a compute node, rather it is accessed via an API|
+|Reserved virtual server|Instances allow you to reserve capacity and guarantee resources for future deployments|
+|SDN|Software Defined Networking|
+|Shared or Public Cloud VMs|Are provider-managed, multi-tenant deployments that can be provisioned on-demand with predefined sizes|
+|Transient or Spot VMs|Take advantage of unused capacity in a cloud data center
+|Virtualization|Process of creating a software-based or virtual version of something whether that be compute, storage, networking, servers, or applications|
+|VLANs|Virtual Local Area Networks|
+|VM|Virtual machines are software-based computers, based on virtualization technologies|
+|VPC|Virtual Private Cloud|
+|VPN|Virtual Private Networks|
+
+
+### Additional Notes: 
+Which of the following VMs use hosted hypervisors? 
+A. Open-source KVM
+B. Oracle VirtualBox
+C. Microsoft Hyper-V
+D. VMware ESX 
+
+
+Open-source KVM: KVM (Kernel-based Virtual Machine) is a type 1 or bare-metal hypervisor, not a hosted hypervisor. It runs directly on the host hardware without requiring a separate underlying operating system.
+
+Oracle VirtualBox: VirtualBox is a type 2 or hosted hypervisor. It runs as an application on top of an existing host operating system (like Windows, macOS, or Linux) and allows you to create and manage virtual machines. (The answer is B)
+
+Microsoft Hyper-V: Hyper-V is a type 1 or bare-metal hypervisor. It runs directly on the hardware without the need for a separate host operating system.
+
+VMware ESX: VMware ESX (now part of VMware vSphere) is a type 1 or bare-metal hypervisor. It also runs directly on the hardware without a separate host operating system.  
+
+
+Which of the following is a geographic area or location where a Cloud provider’s infrastructure is clustered?
+
+A. Warehouse 
+B. Networking
+C. Data center
+D. Region
+
+
+A region in cloud computing refers to a geographic area or location where a cloud provider's infrastructure is clustered. It typically consists of multiple data centers that are in relatively close proximity to each other, often within the same country or continent. (Answer is D. Region)
+
+Data center is a physical facility where servers, storage systems, networking equipment, and other IT infrastructure are housed. Data centers are typically located within regions and are part of the cloud provider's overall infrastructure.
+
+Warehouse is a term that generally refers to a large storage facility for goods, materials, or merchandise. It does not specifically relate to cloud computing infrastructure.
+
+Networking refers to the practice of connecting computer systems and networks together for communication purposes. It is a broader term and does not specifically refer to a geographic area where cloud infrastructure is clustered.
+
+Which part of a logically segmented cloud network is the main area where security is implemented?   
+
+A. Logical instances of networking elements
+B. Networking spaces
+C. Load balancers
+D. Subnets
+
+Subnets are logical subdivisions of an IP network. In cloud environments, subnets are used to segment and organize different parts of the network. Security measures such as network access control lists (ACLs), security groups, and routing rules are typically applied at the subnet level to control traffic flow and enforce security policies. (The answer is D. )
+
+Logical instances of networking elements refer to virtual instances of networking components (such as virtual routers, firewalls, etc.) within the cloud environment. While security may also be implemented at these instances, the primary enforcement typically occurs at the subnet level.
+
+Networking spaces is not a standard term in cloud networking. It might refer to IP address ranges or address spaces allocated for networking purposes, but it doesn't directly relate to where security is implemented.
+
+Load balancers are network devices that distribute incoming network or application traffic across multiple servers. They are crucial for scalability and availability but are not the main area where security policies are enforced in a logically segmented cloud network.
+
 ## Module 4: Emergent Trends and Practices
 ### Keywords: 
 Hybrid Computing Microservices, Serverless Computing, Cloud-native apps, DevOps, Application Modernization
@@ -335,6 +458,11 @@ MODULE 4: Emergent trends & practices
           Practice Assessment
 
           Graded Assessment
+```
+
+### Summary
+```
+
 ```
 
 ## Module 5: Security, Business, Careers
