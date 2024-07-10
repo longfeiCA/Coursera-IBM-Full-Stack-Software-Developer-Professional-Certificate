@@ -462,8 +462,33 @@ MODULE 4: Emergent trends & practices
 
 ### Summary
 ```
+Lesson 1 Summary
+In this lesson, you have learned:
+
+Hybrid multi-cloud is a cloud adoption strategy that makes it possible for public clouds, private clouds, and on-premises IT to interoperate seamlessly while leveraging the best cloud-based services from different public cloud providers.
+
+Microservices architecture is an approach in which an application is built as a collection of loosely coupled and independently deployable components or services, leading to efficient development, maintenance, and upgradation cycles.
+
+Serverless computing is an approach to computing that offloads responsibility for common infrastructure management tasks for application runtimes to cloud providers, allowing developers to focus their time and effort on development and testing, and not have to worry about provisioning, maintaining and scaling compute resources.
+
 
 ```
+
+### Addtional Notes
+Top-down view of Cloud-Native apps:  
+
+Application code (</> Cloud-Native apps)  
+Application Runtime (middleware)  
+Application + Data Services (Backing services)  
+Scheduling + Orchestration (control planes, kubernetes)  
+Cloud / Infrastructure (public, private, enterprise infrastructure)  
+
+Benefits:  
+Innovation  
+agility(allowing businesses to move faster)  
+commoditization(the process of converting products or services into standardized, marketable objects)  
+
+
 
 ## Module 5: Security, Business, Careers
 ### Keywords: 
